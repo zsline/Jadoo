@@ -606,6 +606,9 @@ input[type=submit]{
   width: 100%;
   padding-top: 107px;
   overflow: hidden;
+  &__img{
+    transform: translateX(120%);
+  }
   &__bg-decor{
     position: absolute;
     top: -20px;
@@ -637,20 +640,30 @@ input[type=submit]{
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 24px;
+      transform: translateY(-40px);
+      opacity: 0;
     }
     &--title{
       color: var(--title-color);
       margin-bottom: 30px;
+      transform: translateY(-40px);
+      opacity: 0;
     }
     p {
       line-height: 30px;
       width: 75%;
       margin-bottom: 34px;
+      transform: translateY(-40px);
+      opacity: 0;
     }
     &--btns{
       display: flex;
       align-items: center;
       gap: 44px;
+      a{
+        transform: translateY(-40px);
+        opacity: 0;
+      }
     }
   }
 }
@@ -658,8 +671,14 @@ input[type=submit]{
   position: relative;
   &__title{
     text-align: center;
+    h2{
+      transform: translateY(-40px);
+      opacity: 0;
+    }
     span{
       text-transform: uppercase;
+      transform: translateY(-40px);
+      opacity: 0;
     }
   }
   &__wrapper{
@@ -677,7 +696,7 @@ input[type=submit]{
     border-radius: 36px;
     background-color: #fff;
     transform-style: preserve-3d;
-    transition: all 0.5s;
+    transition: all 1s;
     cursor: default;
     h4{
       color: var(--title-color);
@@ -734,8 +753,14 @@ input[type=submit]{
 .top{
   &__title{
     text-align: center;
+    h2{
+      transform: translateY(-40px);
+      opacity: 0;
+    }
     span{
       text-transform: none;
+      transform: translateY(-40px);
+      opacity: 0;
     }
   }
   &__wrapper{

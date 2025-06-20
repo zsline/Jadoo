@@ -617,6 +617,11 @@ input[type=submit] {
   overflow: hidden;
 }
 
+.hero__img {
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+}
+
 .hero__bg-decor {
   position: absolute;
   top: -20px;
@@ -660,17 +665,26 @@ input[type=submit] {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 24px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
 }
 
 .hero__offer--title {
   color: var(--title-color);
   margin-bottom: 30px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
 }
 
 .hero__offer p {
   line-height: 30px;
   width: 75%;
   margin-bottom: 34px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
 }
 
 .hero__offer--btns {
@@ -683,6 +697,12 @@ input[type=submit] {
   gap: 44px;
 }
 
+.hero__offer--btns a {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+}
+
 .categories {
   position: relative;
 }
@@ -691,8 +711,17 @@ input[type=submit] {
   text-align: center;
 }
 
+.categories__title h2 {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+}
+
 .categories__title span {
   text-transform: uppercase;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
 }
 
 .categories__wrapper {
@@ -715,8 +744,8 @@ input[type=submit] {
   background-color: #fff;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   cursor: default;
 }
 
@@ -791,8 +820,17 @@ input[type=submit] {
   text-align: center;
 }
 
+.top__title h2 {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+}
+
 .top__title span {
   text-transform: none;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
 }
 
 .top__wrapper {

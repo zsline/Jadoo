@@ -132,10 +132,15 @@ if(modal){
     function startSvg(entries, observer) {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
+              const animate = document.querySelectorAll('.animate-box');
               const anim = entry.target;
               if(anim.classList.contains('anim-scroll')){
                 anim.classList.add('animate');
               }
+              animate.forEach(el => {
+                el.classList.add('start-animate');
+                observer.unobserve(el);
+              })
               if (anim.querySelector('animate')){
                 anim.querySelector('animate').beginElement();
                 if(anim.classList.contains('once')){
@@ -153,9 +158,46 @@ if(modal){
             observer.observe(i)
         }
     })
- 
-  
 }
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".hero__img", { x:0, duration: 2.3,  delay: 2});
+gsap.to(".hero__offer--subtitle", { y:0, opacity:1, duration: 1,  delay: 1});
+gsap.to(".hero__offer--title", { y:0, opacity:1, duration: 1,  delay: 1.5});
+gsap.to(".hero__offer p", { y:0, opacity:1, duration: 1,  delay: 2});
+gsap.to(".hero__offer--btns a", { y:0, opacity:1, duration: 1,  delay: 2.5, stagger: 0.2});
 
+gsap.to('.categories__title span', {
+	scrollTrigger: '.categories',
+	y:0, 
+    opacity:1,
+    duration: 1.3, 
+});
+gsap.to('.categories__title h2', {
+	scrollTrigger: '.categories',
+	y:0, 
+    opacity:1,
+    duration: 1.3, 
+    delay: 0.5,
+});
+gsap.to('.categories__title span', {
+	scrollTrigger: '.categories',
+	y:0, 
+    opacity:1,
+    duration: 1.3, 
+});
+
+gsap.to('.top__title span', {
+	scrollTrigger: '.top',
+	y:0, 
+    opacity:1,
+    duration: 1.3, 
+});
+gsap.to('.top__title h2', {
+	scrollTrigger: '.top',
+	y:0, 
+    opacity:1,
+    duration: 1.3, 
+    delay: 0.5,
+});
   
 
